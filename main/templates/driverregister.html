@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Registration Form</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Driver Registration Form</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPhone">Phone Number</label>
+            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputGender">Gender</label>
+            <select id="inputGender" class="form-control" required>
+                <option selected>Choose...</option>
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="inputDOB">Date of Birth</label>
+            <input type="date" class="form-control" id="inputDOB" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputNIK">NIK</label>
+            <input type="text" class="form-control" id="inputNIK" placeholder="NIK" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputNPWP">NPWP</label>
+            <input type="text" class="form-control" id="inputNPWP" placeholder="NPWP" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputBankName">Bank Name</label>
+            <input type="text" class="form-control" id="inputBankName" placeholder="Bank Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputBankAccountNumber">Bank Account Number</label>
+            <input type="text" class="form-control" id="inputBankAccountNumber" placeholder="Bank Account Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputDrivingLicense">Driving License Number</label>
+            <input type="text" class="form-control" id="inputDrivingLicense" placeholder="Driving License Number" required>
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Available Working Days</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="workingDays" id="workingDays1" value="option1" checked>
+                        <label class="form-check-label" for="workingDays1">
+                            Monday to Sunday
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="workingDays" id="workingDays2" value="option2">
+                        <label class="form-check-label" for="workingDays2">
+                            More than 1
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+{% endblock content %}
