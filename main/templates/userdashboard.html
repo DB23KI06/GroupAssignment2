@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">User Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <!-- Placeholder for navigation items -->
+  </div>
+</nav>
+
+<div class="container mt-5">
+    <h2>User Dashboard: [User's Full Name]</h2>
+    <p>Name: [text]</p>
+    <p>Registered Phone Number: [text]</p>
+    <p>Address: [text]</p>
+    <p>Gender: [text]</p>
+    <p>Date of Birth: [text]</p>
+
+    <!-- Placeholder for Child role specific data -->
+    <div id="childInfo">
+        <h4>Child Information (If user is a Child)</h4>
+        <p>Dad Name: [text]</p>
+        <p>Mom Name: [text]</p>
+    </div>
+
+    <!-- Placeholder for Caregiver role specific data -->
+    <div id="caregiverInfo">
+        <h4>Caregiver Information(If user is a Caregiver)</h4>
+        <p>NIK: [text]</p>
+        <p>NPWP: [text]</p>
+        <p>Bank Name: [text]</p>
+        <p>Bank Account Number: [text]</p>
+        <p>Certificates:</p>
+        <!-- Placeholder for a table of certificates -->
+    </div>
+
+    <!-- Placeholder for Driver role specific data -->
+    <div id="driverInfo">
+        <h4>Driver Information(If user is a Driver)</h4>
+        <p>NIK: [text]</p>
+        <p>NPWP: [text]</p>
+        <p>Bank Name: [text]</p>
+        <p>Bank Account Number: [text]</p>
+        <p>Driving License Number: [text]</p>
+        <p>Available Working Hours: [text separated by a comma]</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% comment %} <script>
+// Example JavaScript to toggle the display based on the user's role.
+// You will need to replace this with real logic that checks the user's role.
+
+function showRoleInfo(role) {
+    document.getElementById('childInfo').style.display = 'none';
+    document.getElementById('caregiverInfo').style.display = 'none';
+    document.getElementById('driverInfo').style.display = 'none';
+
+    if (role === 'child') {
+        document.getElementById('childInfo').style.display = 'block';
+    } else if (role === 'caregiver') {
+        document.getElementById('caregiverInfo').style.display = 'block';
+    } else if (role === 'driver') {
+        document.getElementById('driverInfo').style.display = 'block';
+    }
+}
+
+// Dummy function call to demonstrate functionality
+// This should be replaced with actual role retrieval logic
+showRoleInfo(); // Call this function with 'child', 'caregiver', or 'driver' based on the user's role
+</script> {% endcomment %}
+
+</body>
+</html>
+
+{% endblock content %}

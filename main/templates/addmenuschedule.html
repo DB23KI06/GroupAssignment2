@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Menu Schedule</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>ADD MENU SCHEDULE</h2>
+    
+    <form action="processaddmenu.php" method="POST">
+        <div class="form-group">
+            <label for="day">Day:</label>
+            <input type="text" class="form-control" id="day" name="day" required>
+        </div>
+
+        <div class="form-group">
+            <label for="morningSnackMenuName">Morning Snack:</label>
+            <select class="form-control" id="morningSnackMenuName" name="morningSnackMenuName" required>
+                <!-- Dropdown options should be dynamically generated based on available menus -->
+                <option value="1">Menu 1</option>
+                <option value="2">Menu 2</option>
+                <!-- etc... -->
+            </select>
+            <input type="text" class="form-control mt-2" id="morningSnackHour" name="morningSnackHour" placeholder="Hour" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lunchMenuName">Lunch:</label>
+            <select class="form-control" id="lunchMenuName" name="lunchMenuName" required>
+                <!-- Dropdown options for Lunch -->
+            </select>
+            <input type="text" class="form-control mt-2" id="lunchHour" name="lunchHour" placeholder="Hour" required>
+        </div>
+
+        <div class="form-group">
+            <label for="afternoonSnackMenuName">Afternoon Snack:</label>
+            <select class="form-control" id="afternoonSnackMenuName" name="afternoonSnackMenuName" required>
+                <!-- Dropdown options for Afternoon Snack -->
+            </select>
+            <input type="text" class="form-control mt-2" id="afternoonSnackHour" name="afternoonSnackHour" placeholder="Hour" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

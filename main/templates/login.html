@@ -3,34 +3,41 @@
 
 
 {% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login Form</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .help-text {
+            font-size: 0.8em;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh;">
-            <div class="col-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
+                    <div class="card-header text-center">
+                        LOGIN FORM
+                    </div>
                     <div class="card-body">
-                        <h3 class="text-center">SIMIBIDAY</h3>
-                        <p class="text-center"><strong>DBKI2306</strong></p>
                         <form>
                             <div class="form-group">
-                                <!-- Removed input field for Group Code -->
+                                <label for="phoneNumber">Phone number:</label>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                                <small class="form-text text-muted help-text">(for child users, use parent’s phone number)</small>
                             </div>
                             <div class="form-group">
-                                
-                                <a href="{% url 'main:login' %}">
-                                <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
-                            </a>
-                                <button type="button" class="btn btn-secondary btn-block">REGISTER</button>
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password">
                             </div>
+                            <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Menu</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>UPDATE [MENU NAME] MENU</h2>
+    
+    <form action="processupdatemenu.php" method="POST">
+        <div class="form-group">
+            <label for="menuName">Menu Name:</label>
+            <input type="text" class="form-control" id="menuName" name="menuName" value="old value" required>
+        </div>
+
+        <div class="form-group">
+            <label for="menuType">Menu Type:</label>
+            <select class="form-control" id="menuType" name="menuType" required>
+                <option value="morning snack">Morning Snack</option>
+                <option value="lunch">Lunch</option>
+                <option value="afternoon snack">Afternoon Snack</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+// Ensure the default value is selected in the dropdown
+document.addEventListener('DOMContentLoaded', function() {
+    let menuTypeDropdown = document.getElementById('menuType');
+    // Replace 'oldTypeValue' with the actual value from your data source
+    let oldTypeValue = 'oldTypeValue'; 
+    menuTypeDropdown.value = oldTypeValue;
+});
+</script>
+
+</body>
+</html>

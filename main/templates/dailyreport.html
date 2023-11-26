@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Report</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Daily Report</h2>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Class</th>
+                <th scope="col">Date</th>
+                <th scope="col">Activity Report</th>
+                <th scope="col">Eating Report</th>
+                <th scope="col">Photo Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Toddler-A</td>
+                <td>25-11-2023</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo1" target="_blank">link.photo1</a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Kindergarten1-A</td>
+                <td>13-5-2024</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo2" target="_blank">link.photo2</a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Kindergarten2-B</td>
+                <td>28-1-2025</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo3" target="_blank">link.photo3</a></td>
+            </tr>
+            <!-- Additional rows as needed -->
+            <tr>
+                <th scope="row">etc</th>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row justify-content-center">
+        <a class="btn btn-primary mt-3" href="{% url 'main:show_main' %}">Back</a>
+    </div>
+    
+</div>
+
+
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
