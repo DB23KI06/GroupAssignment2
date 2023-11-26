@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Program Offer</title>
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>NEW PROGRAM OFFER</h2>
+    
+    <form action="processnewoffer.php" method="POST">
+        <div class="form-group">
+            <label for="selectProgram">Select Program:</label>
+            <select class="form-control" id="selectProgram" name="programId" required>
+                <!-- Dropdown options should be dynamically generated based on available programs -->
+                <option value="1">Program 1</option>
+                <option value="2">Program 2</option>
+                <!-- etc... -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Monthly Fee:</label>
+            <span id="monthlyFee">[integer]</span>
+        </div>
+
+        <div class="form-group">
+            <label>Daily Fee:</label>
+            <span id="dailyFee">[integer]</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
