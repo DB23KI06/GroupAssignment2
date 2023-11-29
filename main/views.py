@@ -80,11 +80,11 @@ def paymenthistory(request):
 
     return render(request, 'paymenthistory.html', context)
 
-def programs(request):
+def program(request):
     context = {
     }
 
-    return render(request, 'programs.html', context)
+    return render(request, 'program.html', context)
 
 def programform(request):
     context = {
