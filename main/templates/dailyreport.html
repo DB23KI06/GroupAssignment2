@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
+
+
 {% block content %}
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -12,26 +15,12 @@
 <body>
 
 <div class="container mt-5">
-    <h2 class="mb-4">[CHILD NAME]'s Daily Report</h2>
-    
-    <!-- Child Name and Phone Number Fields -->
-    <div class="form-group">
-        <label for="childName">Child Name:</label>
-        <input type="text" class="form-control" id="childName" placeholder="Enter child's name">
-    </div>
-    <div class="form-group">
-        <label for="childPhoneNumber">Child Phone Number:</label>
-        <input type="text" class="form-control" id="childPhoneNumber" placeholder="Enter child's phone number">
-    </div>
-
-    <!-- Add button -->
-    <div class="row justify-content-start">
-        <a class="btn btn-success mt-3 mb-3" href="#">Add</a>
-    </div>
-
+    <h2 class="mb-4">Daily Report</h2>
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr>
+                <th scope="col">No</th>
+                <th scope="col">Class</th>
                 <th scope="col">Date</th>
                 <th scope="col">Activity Report</th>
                 <th scope="col">Eating Report</th>
@@ -39,23 +28,48 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Example Row -->
             <tr>
-                <td>dd-mm-yyyy</td>
-                <td>Activity description</td>
-                <td>Eating description</td>
-                <td><a href="link.to/photo" target="_blank">View Photo</a></td>
+                <th scope="row">1</th>
+                <td>Toddler-A</td>
+                <td>25-11-2023</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo1" target="_blank">link.photo1</a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Kindergarten1-A</td>
+                <td>13-5-2024</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo2" target="_blank">link.photo2</a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Kindergarten2-B</td>
+                <td>28-1-2025</td>
+                <td>"lorem ipsum"</td>
+                <td>"lorem ipsum"</td>
+                <td><a href="link.photo3" target="_blank">link.photo3</a></td>
             </tr>
             <!-- Additional rows as needed -->
+            <tr>
+                <th scope="row">etc</th>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+                <td>etc</td>
+            </tr>
         </tbody>
     </table>
-    
-    <!-- Back button -->
     <div class="row justify-content-center">
         <a class="btn btn-primary mt-3" href="{% url 'main:show_main' %}">Back</a>
     </div>
     
 </div>
+
+
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
