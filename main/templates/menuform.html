@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <!DOCTYPE html>
@@ -12,11 +10,27 @@
 <title>Menu Form</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Additional styles to match the provided image */
+    .container {
+        border: solid 1px black;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    .btn-primary {
+        display: block;
+        width: 100%;
+        margin-top: 10px; /* Space above the button */
+    }
+</style>
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>MENU FORM</h2>
+    <h2 class="mb-3">MENU FORM</h2>
     
     <form action="processaddmenu.php" method="POST">
         <div class="form-group">
@@ -27,9 +41,10 @@
         <div class="form-group">
             <label for="menuType">Menu Type:</label>
             <select class="form-control" id="menuType" name="menuType" required>
-                <option value="morning snack">morning snack</option>
-                <option value="lunch">lunch</option>
-                <option value="afternoon snack">afternoon snack</option>
+                <option value="">Select type</option>
+                <option value="morning snack">Morning Snack</option>
+                <option value="lunch">Lunch</option>
+                <option value="afternoon snack">Afternoon Snack</option>
             </select>
         </div>
 

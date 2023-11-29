@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <!DOCTYPE html>
@@ -12,14 +10,35 @@
 <title>Children in Class</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Additional styling to match the provided image */
+    .container {
+        border: solid 1px black;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .container h2 {
+        text-align: center;
+        margin-bottom: 20px; /* Spacing below the title */
+    }
+    .table th, .table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    .btn-primary {
+        /* Optional: if you need the button to not stretch */
+        width: auto; 
+        margin: auto;
+    }
+</style>
 </head>
 <body>
 
-<div class="container mt-5">
+<div class="container">
     <h2>CHILDREN IN CLASS</h2>
-    <p>Class Name: [text]</p>
-    <p>Year: [text]</p>
-    <p>Total Children in Class: [text]</p>
+    <div class="mb-3"><strong>Class Name:</strong> <span>[text]</span></div>
+    <div class="mb-3"><strong>Year:</strong> <span>[text]</span></div>
+    <div class="mb-3"><strong>Total Children in Class:</strong> <span>[text]</span></div>
     
     <table class="table table-bordered">
         <thead>
@@ -32,6 +51,7 @@
             </tr>
         </thead>
         <tbody>
+            <!-- Sample table row -->
             <tr>
                 <td>...</td>
                 <td>...</td>

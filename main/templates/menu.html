@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <!DOCTYPE html>
@@ -12,15 +10,29 @@
 <title>Menu</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Additional styling to match the design in the provided image */
+    .table thead th {
+        text-align: center;
+    }
+    .table tbody td {
+        text-align: center;
+    }
+    .table tbody td a.btn, .table tbody td button.btn {
+        margin-right: 10px; /* Add space between Edit and Delete buttons */
+    }
+</style>
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>MENU</h2>
-    <a href="addmenuform.html" class="btn btn-primary mb-3">Add New Menu</a>
+    <h2 class="text-center mb-4">MENU</h2>
+    <div class="row justify-content-center mb-3">
+        <a href="addmenuform.html" class="btn btn-primary">Add New Menu</a>
+    </div>
 
     <table class="table table-bordered">
-        <thead>
+        <thead class="thead-dark">
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Type</th>
@@ -37,18 +49,19 @@
                     <button type="button" class="btn btn-danger">Delete</button>
                 </td>
             </tr>
-            <!-- Repeat rows for each menu -->
+            <!-- Repeat rows for each menu item -->
         </tbody>
     </table>
 
-    <a href="dashboard.html" class="btn btn-secondary">Back</a>
+    <div class="row justify-content-center">
+        <a href="dashboard.html" class="btn btn-secondary mt-3">Back</a>
+    </div>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
 </body>
 </html>
