@@ -2,30 +2,28 @@
 
 
 
-{% block content %}
-
-
-<!DOCTYPE html>
+{% block content %}<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room</title>
+<title>Child List</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>ROOM</h2>
-    <a href="addroomform.html" class="btn btn-primary mb-3">Add New Room</a>
-
+    <h2>CHILD LIST</h2>
+    
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="col">Room Number</th>
-                <th scope="col">Room Area</th>
-                <th scope="col">Operation</th>
+                <th scope="col">Child Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Birthday</th>
+                <th scope="col">Latest Class Name</th>
+                <th scope="col">Phone Number</th>
             </tr>
         </thead>
         <tbody>
@@ -33,11 +31,11 @@
             <tr>
                 <td>...</td>
                 <td>...</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
             </tr>
-            <!-- Repeat rows for each room -->
+            <!-- Repeat rows for each child -->
         </tbody>
     </table>
 

@@ -4,44 +4,40 @@
 
 {% block content %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room</title>
+<title>Class</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>ROOM</h2>
-    <a href="addroomform.html" class="btn btn-primary mb-3">Add New Room</a>
-
-    <table class="table table-bordered">
-        <thead>
+    <h2>CLASS</h2>
+    <table class="table">
+        <thead class="thead-dark">
             <tr>
-                <th scope="col">Room Number</th>
-                <th scope="col">Room Area</th>
-                <th scope="col">Operation</th>
+                <th scope="col">Class Name</th>
+                <th scope="col">Year</th>
+                <th scope="col">Room No.</th>
+                <th scope="col">Children List</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Sample table row -->
             <tr>
+                <td>Current Class</td>
                 <td>...</td>
                 <td>...</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
+                <td><a href="childreninclass.html" class="btn btn-info">Children</a></td>
             </tr>
-            <!-- Repeat rows for each room -->
+            <!-- Additional rows as needed -->
         </tbody>
     </table>
 
-    <a href="dashboard.html" class="btn btn-secondary">Back</a>
+    <a href="index.html" class="btn btn-secondary">Back</a>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -52,4 +48,4 @@
 </body>
 </html>
 
-{% endblock content %}
+{% endblock content%}

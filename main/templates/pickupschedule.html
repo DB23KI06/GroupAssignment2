@@ -3,41 +3,37 @@
 
 
 {% block content %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room</title>
+<title>PICKUP SCHEDULE</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>ROOM</h2>
-    <a href="addroomform.html" class="btn btn-primary mb-3">Add New Room</a>
+    <h2>PICKUP SCHEDULE</h2>
+    <div class="mb-3">
+        <label for="pickupDays">Days:</label>
+        <input type="text" id="pickupDays" class="form-control" placeholder="Enter days separated by a comma">
+    </div>
 
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="col">Room Number</th>
-                <th scope="col">Room Area</th>
-                <th scope="col">Operation</th>
+                <th scope="col">Child Name</th>
+                <th scope="col">Pickup Hour</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Sample table row -->
             <tr>
                 <td>...</td>
                 <td>...</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
             </tr>
-            <!-- Repeat rows for each room -->
+            <!-- Additional rows as needed -->
         </tbody>
     </table>
 
@@ -51,5 +47,13 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 {% endblock content %}

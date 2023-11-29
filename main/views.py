@@ -193,3 +193,75 @@ def paymenthistory(request):
     }
 
     return render(request, 'paymenthistory.html', context)
+
+def paymentform(request):
+    context = {
+    }
+
+    return render(request, 'paymentform.html', context)
+
+def childdailyreport(request):
+    context = {
+    }
+
+    return render(request, 'childdailyreport.html', context)
+
+def childlist(request):
+    context = {
+    }
+
+    return render(request, 'childlist.html', context)
+
+def childreninclass(request):
+    context = {
+    }
+
+    return render(request, 'childreninclass.html', context)
+
+def classroom(request):
+    context = {
+    }
+
+    return render(request, 'classroom.html', context)
+
+def classenrollment(request):
+    context = {
+    }
+
+    return render(request, 'classenrollment.html', context)
+
+def dailyreportform(request):
+    context = {
+    }
+
+    return render(request, 'dailyreportform.html', context)
+
+def paymentform(request):
+    context = {
+    }
+
+    return render(request, 'paymentform.html', context)
+
+def pickupschedule(request):
+    context = {
+    }
+
+    return render(request, 'pickupschedule.html', context)
+
+def programdata(request):
+    context = {
+    }
+
+    return render(request, 'programdata.html', context)
+
+def shuttleserviceform(request):
+    context = {
+    }
+
+    return render(request, 'shuttleserviceform.html', context)
+
+def stafflist(request):
+    context = {
+    }
+
+    return render(request, 'stafflist.html', context)

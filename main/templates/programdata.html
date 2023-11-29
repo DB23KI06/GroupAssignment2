@@ -3,29 +3,28 @@
 
 
 {% block content %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room</title>
+<title>Class Enrollment</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>ROOM</h2>
-    <a href="addroomform.html" class="btn btn-primary mb-3">Add New Room</a>
-
-    <table class="table table-bordered">
+    <h2>Class Enrollment</h2>
+    <p>Available Class:</p>
+    <table class="table">
         <thead>
             <tr>
-                <th scope="col">Room Number</th>
-                <th scope="col">Room Area</th>
-                <th scope="col">Operation</th>
+                <th scope="col">Class</th>
+                <th scope="col">Caregiver</th>
+                <th scope="col">Room Name</th>
+                <th scope="col">Total Participant</th>
+                <th scope="col">Enroll</th>
             </tr>
         </thead>
         <tbody>
@@ -33,15 +32,23 @@
             <tr>
                 <td>...</td>
                 <td>...</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
+                <td>...</td>
+                <td>16/20</td>
+                <td><button class="btn btn-primary">Enroll</button></td>
             </tr>
-            <!-- Repeat rows for each room -->
+            <!-- Sample table row for a full class -->
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>20/20</td>
+                <td><button class="btn btn-primary" disabled>Enroll</button></td>
+            </tr>
+            <!-- Repeat rows as needed -->
         </tbody>
     </table>
 
-    <a href="dashboard.html" class="btn btn-secondary">Back</a>
+    <a href="index.html" class="btn btn-secondary">Back</a>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -51,5 +58,4 @@
 
 </body>
 </html>
-
 {% endblock content %}

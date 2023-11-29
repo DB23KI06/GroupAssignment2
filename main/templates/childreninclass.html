@@ -4,44 +4,46 @@
 
 {% block content %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room</title>
+<title>Children in Class</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>ROOM</h2>
-    <a href="addroomform.html" class="btn btn-primary mb-3">Add New Room</a>
-
+    <h2>CHILDREN IN CLASS</h2>
+    <p>Class Name: [text]</p>
+    <p>Year: [text]</p>
+    <p>Total Children in Class: [text]</p>
+    
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="col">Room Number</th>
-                <th scope="col">Room Area</th>
-                <th scope="col">Operation</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Birthday</th>
+                <th scope="col">Enrollment Type</th>
+                <th scope="col">Daily Report</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Sample table row -->
             <tr>
                 <td>...</td>
                 <td>...</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
+                <td>...</td>
+                <td>...</td>
+                <td><a href="dailyreport.html" class="btn btn-primary">View Daily Report</a></td>
             </tr>
-            <!-- Repeat rows for each room -->
+            <!-- Repeat rows for each child -->
         </tbody>
     </table>
 
-    <a href="dashboard.html" class="btn btn-secondary">Back</a>
+    <a href="class.html" class="btn btn-secondary">Back</a>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
