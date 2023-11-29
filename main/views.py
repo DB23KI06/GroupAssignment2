@@ -265,3 +265,9 @@ def stafflist(request):
     }
 
     return render(request, 'stafflist.html', context)
+
+def addactivityschedule(request):
+    context = {
+    }
+
+    return render(request, 'addactivityschedule.html', context)

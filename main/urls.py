@@ -43,6 +43,7 @@ from main.views import (
     programdata,
     shuttleserviceform,
     stafflist,
+    addactivityschedule,
 )
 
 app_name = 'main'
@@ -92,4 +93,5 @@ urlpatterns = [
     path('programdata/', programdata, name='programdata'),
     path('shuttleserviceform/', shuttleserviceform, name='shuttleserviceform'),
     path('stafflist/', stafflist, name='stafflist'),
+    path('addactivityschedule/', addactivityschedule, name='addactivityschedule'),
 ]
