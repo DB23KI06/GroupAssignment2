@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,21 +10,41 @@
 <title>Update Menu</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Additional styles to match the provided image */
+    .container {
+        border: solid 1px black;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px; /* Spacing below the title */
+    }
+    .btn-primary {
+        display: block;
+        width: 100%; /* Full-width button */
+        margin-top: 10px; /* Spacing above the button */
+    }
+</style>
 </head>
 <body>
 
 <div class="container mt-5">
+    <!-- Use PHP or server-side templating to insert the actual menu name -->
     <h2>UPDATE [MENU NAME] MENU</h2>
     
     <form action="processupdatemenu.php" method="POST">
         <div class="form-group">
             <label for="menuName">Menu Name:</label>
-            <input type="text" class="form-control" id="menuName" name="menuName" value="old value" required>
+            <!-- The value attribute should be populated with the old value -->
+            <input type="text" class="form-control" id="menuName" name="menuName" value="" required>
         </div>
 
         <div class="form-group">
             <label for="menuType">Menu Type:</label>
             <select class="form-control" id="menuType" name="menuType" required>
+                <!-- Ensure the option values match the old value -->
                 <option value="morning snack">Morning Snack</option>
                 <option value="lunch">Lunch</option>
                 <option value="afternoon snack">Afternoon Snack</option>

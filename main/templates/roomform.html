@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +10,31 @@
 <title>Room Form</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Additional styles to match the provided image */
+    .container {
+        border: solid 1px black;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px; /* Spacing below the title */
+    }
+    .btn-primary {
+        display: block;
+        width: 100%; /* Full-width button */
+        margin-top: 10px; /* Spacing above the button */
+    }
+</style>
 </head>
 <body>
 
-<div class="container mt-5">
+<div class="container">
     <h2>ROOM FORM</h2>
     
-    <form>
+    <form action="processroom.php" method="POST">
         <div class="form-group">
             <label for="roomNumber">Room Number:</label>
             <input type="text" class="form-control" id="roomNumber" name="roomNumber" required>
