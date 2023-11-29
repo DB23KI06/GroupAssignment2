@@ -3,52 +3,67 @@
 
 
 {% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Class Enrollment</title>
+<title>Program Data</title>
 <!-- Link to Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2>Class Enrollment</h2>
-    <p>Available Class:</p>
+    <h2>Program Data</h2>
+    <div class="mb-3">
+        <label for="programName" class="form-label">Program Name:</label>
+        <span id="programName">[text]</span>
+    </div>
+    <div class="mb-3">
+        <label for="programYear" class="form-label">Program Year:</label>
+        <span id="programYear">[text]</span>
+    </div>
+    <div class="mb-3">
+        <label for="className" class="form-label">Class Name:</label>
+        <span id="className">[text]</span>
+    </div>
+    <div class="mb-3">
+        <label for="caregiver" class="form-label">Caregiver:</label>
+        <span id="caregiver">[text]</span>
+    </div>
+    <div class="mb-3">
+        <label for="roomNumber" class="form-label">Room Number:</label>
+        <span id="roomNumber">[text]</span>
+    </div>
+    <div class="mb-3">
+        <label for="enrolledOn" class="form-label">Enrolled on:</label>
+        <span id="enrolledOn">[date]</span>
+    </div>
+    <div class="mb-3">
+        <label for="extracurricularTaken" class="form-label">Extracurricular Taken:</label>
+        <span id="extracurricularTaken">[text separated by a comma]</span>
+        <a href="manageextracurricular.html">[manage extracurricular]</a>
+    </div>
+    <div class="mb-3">
+        <label for="shuttleService" class="form-label">Shuttle Service:</label>
+        <span id="shuttleService">[text] (pickup hour), [text] (driver phone number)</span>
+    </div>
+
+    <!-- Activity Schedule Table Placeholder -->
+    <h3>Activity Schedule:</h3>
     <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Class</th>
-                <th scope="col">Caregiver</th>
-                <th scope="col">Room Name</th>
-                <th scope="col">Total Participant</th>
-                <th scope="col">Enroll</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Sample table row -->
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>16/20</td>
-                <td><button class="btn btn-primary">Enroll</button></td>
-            </tr>
-            <!-- Sample table row for a full class -->
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>20/20</td>
-                <td><button class="btn btn-primary" disabled>Enroll</button></td>
-            </tr>
-            <!-- Repeat rows as needed -->
-        </tbody>
+        <!-- Table Content -->
     </table>
 
-    <a href="index.html" class="btn btn-secondary">Back</a>
+    <!-- Menu Schedule Table Placeholder -->
+    <h3>Menu Schedule:</h3>
+    <table class="table">
+        <!-- Table Content -->
+    </table>
+
+    <a href="index.html" class="btn btn-primary">[Back]</a>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -58,4 +73,5 @@
 
 </body>
 </html>
+
 {% endblock content %}
