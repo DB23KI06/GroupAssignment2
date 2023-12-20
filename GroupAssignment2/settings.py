@@ -76,8 +76,15 @@ WSGI_APPLICATION = 'GroupAssignment2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '*eg2c3aF-*B*CG316F1f1-dfEf-AG462',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '17697',
+        'OPTIONS': {
+            'options': '-c search_path=group6'
+        },
     }
 }
 

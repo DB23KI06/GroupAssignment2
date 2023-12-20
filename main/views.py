@@ -1,9 +1,14 @@
 from django.shortcuts import render
-
-# Create your views here.
+from django.db import connection
+from collections import namedtuple
+from django.contrib.auth import authenticate, login
 
 def show_main(request):
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT roomno from room")
+        result = cursor.fetchall()
     context = {
+        'test' : result[0][0]
     }
 
     return render(request, 'main.html', context)
